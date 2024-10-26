@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+.phone{
+    width: 400px;
+    height: 700px;
+    margin: 100px auto;
+    border-radius: 50px;
+    border-top: 80px solid rgb(0, 0, 0);
+    border-bottom: 100px solid rgb(0, 0, 0);
+    border-left: 20px solid rgb(0, 0, 0);
+    border-right: 20px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    >.charg{
+        width: 360px;
+        height: 25px;
+        background-color: rgb(120, 120, 120);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0 !important;left: 0 !important;
+        z-index: 999;
+
+        >span{
+            color: white;
+        }
+    }
+
+    .box{
+        width: 100%;
+        height: 200px;         
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        transition: .4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:nth-of-type(1){
+            background-color: rgb(43, 226, 226);
+        }
+        &:nth-of-type(2){
+            background-color: rgb(105, 235, 235);
+        }
+        &:nth-of-type(3){
+            background-color:bisque ;
+        }
+        &:nth-of-type(4){
+            background-color:rgb(220, 165, 62) ;
+        }
+        &:nth-of-type(5){
+            background-color: orangered;
+        }
+        &:nth-of-type(6){
+            background-color: darkred;
+        }
+    
+  }
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(93, 93, 93);
+    position: absolute;
+    top: 120%;left: 50%;      
+    transform: translateX(-50%); 
+}
+.transform{
+    transform: translateY(-450px);
+}
+.fix{
+    position: fixed;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.list{
+    transition: 1s;
+}
+.box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(116, 116, 116);
+    text-transform: uppercase;
+    align-items: center;
+}
